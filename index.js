@@ -31,6 +31,6 @@ app.get("/usuario", async (req, res) => {
   return res.status(200).send(usuario);
 });
 
-app.listen(process.env.PORT || 3030, () => {
+app.listen(process.env.NODE_PORT || 3030, () => {
   console.log("Servidor rodando");
 });
